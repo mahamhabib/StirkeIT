@@ -9,7 +9,7 @@
         <!--StrikeIt-->
         <scene sceneID="3S4-7A-tyf">
             <objects>
-                <tableViewController id="UPY-wd-g9e" customClass="StrikeItViewController" customModule="StirkeIT" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="UPY-wd-g9e" customClass="StrikeItViewController" customModule="StirkeIT" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DCK-41-QGy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,14 @@
                             <outlet property="delegate" destination="UPY-wd-g9e" id="I8T-jb-v8Y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="StrikeIt" id="3lc-fi-Rw4"/>
+                    <navigationItem key="navigationItem" title="StrikeIt" id="3lc-fi-Rw4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wZs-Rj-ujb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="UPY-wd-g9e" id="wyE-aO-ctZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ofa-y2-t7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
